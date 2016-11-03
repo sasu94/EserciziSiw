@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Benvenuti nella pagina di registrazione</h1>
+	<p>
+		Inserendo i tuoi dati nel modulo sottostante potrai usufruire di
+		servizi eccezionali. Cosa aspetti<br> (se incontri difficoltà
+		invia un'email all'indirizzo<a href="mailto:info@worldbooks.it">info@worldbooks.it</a>)
+	</p>
+	<h2>Modulo di registrazione</h2>
+	<form method="POST" action="">
+	<table>
+		<tr>
+			<td>Nome e Cognome</td>
+			<td><input type=text name="nome"></td>
+		</tr>
+		<tr>
+			<td>Sesso</td>
+			<td><input type=radio name=sesso value=M checked="checked">M<input type=radio
+				name=sesso value=F> F</td>
+		</tr>
+		<tr>
+			<td>Hai ricevuto notizia di <br>questo servizio tramite
+			</td>
+			<td><input type="checkbox" name=Internet>Internet <input
+				type="checkbox" name=Internet>Giornali <input type="checkbox" name=Internet>Televisione</td>
+
+		</tr>
+		<tr>
+			<td>Desideri ricevere un messaggio<br> informativo ogni
+			</td>
+			<td><select name="frequenza">
+					<option>1 settimana</option>
+					<option>1 mese</option>
+					<option>1 anno</option>
+			</select></td>
+		</tr>
+		<tr>
+		<td>Eventuali commenti</td>
+		<td><textarea rows="10" cols="20" name="commenti"></textarea> </td>
+		</tr>
+		<tr>
+		<td colspan="2"><input type="submit"></td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
