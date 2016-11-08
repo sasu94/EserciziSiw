@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Weblog</title>
+</head>
+<body>
+	<header>
+		<h1>Weblog</h1>
+		<h2>Some random experience worth sharing</h2>
+		<nav>
+			<ul>
+				<li><a href="#">Header Element</a></li>
+				<li><a href="#">Nav Element</a></li>
+				<li><a href="#">Section Element</a></li>
+				<li><a href="#">Article Element</a></li>
+				<li><a href="#">Aside Element</a></li>
+				<li><a href="#">Footer Element</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<article>
+			<header>
+				<time>October 22, 2009</time>
+				<h2>The difference between &lt;article&gt; and &lt;section&gt;</h2>
+			</header>
+			<p>
+				The
+				<code>&lt;article&gt;</code>
+				element is a specialised kind of
+				<code>&lt;section&gt;</code>
+				; it has a more specific semantic meaning than
+				<code>&lt;section&gt;</code>
+				in that it is <strong>an independent, self-contained</strong> block
+				of related content. We <em>could</em> use
+				<code>&lt;section&gt;</code>
+				, but using
+				<code>&lt;article&gt;</code>
+				gives more semantic meaning to the content.
+			</p>
+			<p>
+				By contrast
+				<code>&lt;section&gt;</code>
+				is only a block of <em>related</em> content, and
+				<code>&lt;div&gt;</code>
+				is only a block of content. To decide which of these three elements
+				is appropriate, choose the first suitable option:
+			</p>
+			<ol>
+				<li>Would the content make sense on its own when shared in a
+					social network or via email? If so use <code>&lt;article&gt;</code>
+				</li>
+				<li>Is the content related? If so use <code>&lt;section&gt;</code></li>
+				<li>Finally if there’s no semantic relationship use <code>&lt;div&gt;</code></li>
+			</ol>
+			<section>
+				<h3>Comments</h3>
+				<article>
+					<header>
+						<h4>Posted by: html5Lover</h4>
+						<p>
+							<time datetime="2009-10-10T19:10-08:00">~1 hour ago</time>
+						</p>
+					</header>
+					<p>I love it!</p>
+				</article>
+				<article>
+					<header>
+						<h4>Posted by: Pippo</h4>
+						<p>
+							<time datetime="2009-10-10T19:15-08:00">~1 hour ago</time>
+						</p>
+					</header>
+					<p>Amazing!!1!</p>
+				</article>
+			</section>
+		</article>
+
+		<article>
+			<header>
+				<time datetime="2009-10-17">October 17, 2009</time>
+				<h2>The aside element</h2>
+			</header>
+			<p>Aside elements are linked to their context. When used within
+				an article element, the contents should be specifically related to
+				that article (e.g., a glossary). When used outside of an article
+				element, it's considered "secondary content", but still related to
+				the site (e.g., a blogroll, groups of additional navigation, and
+				even advertising if that content is related to the page).</p>
+			<aside>
+				<h3>Glossary</h3>
+				<dl>
+					<dt>article</dt>
+					<dd>self-contained content</dd>
+				</dl>
+			</aside>
+		</article>
+	</section>
+	<aside>
+		<h2>Blogroll</h2>
+		<ul>
+			<li><a href="#">My Friend</a></li>
+			<li><a href="#">My Other Friend</a></li>
+			<li><a href="#">My Best Friend</a></li>
+		</ul>
+
+	</aside>
+	<footer>
+		<p>
+			<small>Creative Commons Attribution-ShareAlike License</small>
+		</p>
+	</footer>
+</body>
+</html>

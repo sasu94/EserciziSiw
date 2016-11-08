@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Form Example</h1>
+	<form action="">
+		Name: <input type=text value=Pinco><br> Surname: <input
+			type=text placeholder="Your last name" required><br>
+		Phone Number: <input type=text><br> Programming Skill
+		Level (0/100) <input type="range" name="skill" min=0 max=100 value=0>
+		<output for=skill name=level>0</output>
+		/100 <br> Rate our site (1-5) <input type="number" min=1 max=5
+			value="1"><br> Born date: <input type="date"
+			min="1800-01-01" value="date_born"><br> Password <input
+			type="password"><br> Email:<input type="email"><br>
+		Message:
+		<textarea></textarea>
+		<br> disabled input <input type="text" disabled> <br>
+		<br>
+		<fieldset>
+			<legend>Select Fields</legend>
+			Hobby:<select multiple>
+				<option value=0 selected>Food</option>
+				<option value=1>Music</option>
+				<option value=2 selected>Sport</option>
+				<option value=3>Reading</option>
+			</select> <br> <br> With optgroup <select>
+				<optgroup label="Capoluogo">
+					<option value="BO" selected>Bologna</option>
+				</optgroup>
+				<optgroup label="Emilia">
+					<option value="MO">Modena</option>
+					<option value="RE">Reggio Emilia</option>
+					<option value="PR">Parma</option>
+					<option value="PC">Piacenza</option>
+				</optgroup>
+			</select> <br> <br>
+		</fieldset>
+		<fieldset>
+			<legend>Gender</legend>
+			Male<input type="radio" id="radio1" value="male" name="gender" />
+			Female <input type="radio" id="radio2" value="female" name="gender" />
+			Other <input type="radio" id="radio3" value="other" name="gender" />
+		</fieldset>
+		<br> <br>
+		<fieldset>
+			<legend>i want to be contacted by:</legend>
+			email <input type="checkbox" value="email" name="contact">
+			phone <input type="checkbox" value="phone" name="contact">
+			post<input type="checkbox" value="post" name="contact">
+		</fieldset>
+		<br> <br>
+		<fieldset>
+			<legend>Buttons of any type</legend>
+			<input type="hidden" value="secret code"> <br>
+			<button type="reset" value="resetAll">Reset</button>
+			<br> <br> <input type="button" value="Javascript"
+				onclick="Javascript: alert('Ciao')"> <br> <br> <input
+				type="image" value="SubmitForm!" src="images/lamp.jpg"> <br>
+			<br>
+			<button type="submit">
+				Submit Form! <img src="images/lamp.jpg" width="10" height="10">
+			</button>
+			<br>
+			<br> <input type="submit" value="SubmitForm!">
+		</fieldset>
+	</form>
+</body>
+</html>
