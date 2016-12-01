@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function verifica(){
+	if(confirm("Autorizzi al trattamento?")==true){
+		alert("Autorizzazione concessa");
+	}else{
+		alert("Autorizzazione non concessa");
+	}
+
+}
+</script>
+</head>
+<body>
+
+Nome: <input type=text><br><br>
+Cognome: <input type=text><br><br>
+Cosa private <input type="password"><br><br>
+Autorizzi al trattamento dei dati personali? 
+<input name=aut type="checkbox">Si<br>
+<input type="submit" onclick="verifica()">
+
+</body>
+</html>

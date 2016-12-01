@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	var x = prompt("dammi la grandezza e il colore del carattere per p");
+	var p=x.split(" ");
+	x=prompt("dammi la grandezza e il colore del carattere e sfondo per body");
+	var b=x.split(" ");
+	x=prompt("dammi la grandezza e il colore del carattere per h1");
+	var h=x.split(" ");
+	
+	var style = document.createElement('style');
+	style.type = 'text/css';
+	style.innerHTML = 'p { color: ' + p[1] + ';font-size: ' + p[0] + 'pt; }';
+	style.innerHTML += 'body { color: ' + b[1] + ';font-size: ' + b[0] + 'pt; background-color:'+b[2]+';}';
+	style.innerHTML += 'h1 { color: ' + h[1] + ';font-size: ' + h[0] + 'pt; }';
+	
+	document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+<h1>this is h1 test</h1>
+
+ciaocias
+<p> bravo</p>
+</body>
+</html>

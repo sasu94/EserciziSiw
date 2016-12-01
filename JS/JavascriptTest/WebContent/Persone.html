@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function Persona(nome, cognome, indirizzo) {
+		this.nome = nome;
+		this.cognome = cognome;
+		this.indirizzo = indirizzo;
+
+	}
+
+	var persons = [ new Persona("ciccio", "ciao", "ciao"),
+			new Persona("franco", "ao", "ao") ];
+	
+	while (true) {
+		var x = prompt("dimmi il nome");
+		for (i = 0; i < persons.length; i++) {
+			if (persons[i].nome == x) {
+				alert("amministratore");
+			}
+		}
+	}
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
